@@ -47,10 +47,10 @@ anchor 比例由[0.5 ，1.0， 2.0] 变成 [0.75  1.25,  1.75] （根据数据�
 
 2）swin 和 convnext的预测结果用[Weighted Bbox Fusion](https://github.com/ZFTurbo/Weighted-Boxes-Fusion)作融合.
 
-3)  GroupNormalization 代替Norm-cfg中的BN 和 SyncBN
+3）  GroupNormalization 代替Norm-cfg中的BN 和 SyncBN
 
-4)   Mosaic、 bboxjitter、 AutoAugmentation数据增强(在mmdet/dataset/pipeline/transform.py中）
+4） Mosaic、 bboxjitter、 AutoAugmentation数据增强(在mmdet/dataset/pipeline/transform.py中）
 
-5)   分配策略：ATSS 替代RPN 中的 MaxiouAssigner(修改mmdet/models/dense_heads/anchor_head.py) 
+5）分配策略：ATSS 替代RPN 中的 MaxiouAssigner(修改mmdet/models/dense_heads/anchor_head.py) 
 
-6)   在bbox_roi_extractors全局上下文信息global context(修改mmdet/models/roi_heads/single_level_roi_extractor.py)
+6）   在bbox_roi_extractors全局上下文信息global context(修改mmdet/models/roi_heads/single_level_roi_extractor.py)
